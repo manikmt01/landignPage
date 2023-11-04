@@ -19,8 +19,36 @@
 
 /* layer style to add multiple class */
 @layer components {
-  .btn-blue {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  .wrapper {
+    @apply bg-slate-50 py-10 px-3;
+  }
+
+  .box {
+    @apply shadow rounded-xl lg:w-[1060px] md:w-[980px] max-w-full m-auto md:bg-[url('../img/img.jpg')] bg-cover bg-no-repeat bg-left-top;
+  }
+
+  .contentArea {
+    @apply lg:w-[800px] md:w-[750px] ml-auto bg-white rounded-xl sm:p-10 p-5;
+  }
+
+  .textH4 {
+    @apply sm:text-3xl text-xl font-semibold mb-5;
+  }
+
+  .textP {
+    @apply sm:text-2xl text-base;
+  }
+
+  .innerContetText {
+    @apply sm:flex-1 sm:pl-5 self-center;
+  }
+
+  .or {
+    @apply text-center pt-4 border-solid border-b border-gray-400 relative;
+  }
+
+  .orSpan {
+    @apply inline-block px-2 text-base uppercase relative top-3 bg-white;
   }
 }
 
